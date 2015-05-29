@@ -114,4 +114,24 @@ class ShouldMatcherSpec extends FunSpec with ShouldMatchers {
 			)
 		}
 	}
+
+	describe("java.util.Collection matchers"){
+		it("may be"){
+			import java.util.{List => JList, ArrayList => JArrayList, Map => JMap, HashMap => JHashMap}
+			val jList: JList[Int] = new JArrayList[Int](20)
+			jList.add(3); jList.add(6); jList.add(9)
+			val emptyJList: JList[Int] = new JArrayList[Int]()
+			emptyJList should be('empty)
+			jList should have length (3)
+			jList should have size (3)
+			jList should contain(6)
+			jList should not contain (10)
+			val backupBands: JMap[String, String] = new JHashMap()
+			backupBands.put("Joan Jett", "Blackhearts")
+			backupBands.put("Tom Petty", "Heartbreakers")
+			backupBands should contain key ("Joan Jett")
+			backupBands should contain value ("Heartbreakers")
+			backupBands should not contain key("John Lydon")
+		}
+	}
 }

@@ -16,7 +16,7 @@ class AlbumWordSpec extends WordSpec with ShouldMatchers {
   "An Album" should {
     "throw an IllegalArgumentException if there are no acts when created" in {
       intercept[IllegalArgumentException] {
-        new Album("The Joy", 1980, List())
+        new Album("The Joy", 1980, None)
       }
     }
   }

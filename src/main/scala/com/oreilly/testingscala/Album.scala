@@ -4,8 +4,6 @@ class Act
 
 case class Artist(firstName: String, lastName: String) extends Act
 
-class Track(name: String)
-
 class Band(name: String, members: Artist*) extends Act
 
 class Album(val title: String, val year: Int, _tracks: Option[List[Track]], val acts: Act*) {

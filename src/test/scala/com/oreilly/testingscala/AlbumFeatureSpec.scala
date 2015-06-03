@@ -13,7 +13,7 @@ class AlbumFeatureSpec extends FeatureSpec with ShouldMatchers {
         Some(List(new Track("Black Celebration"), new Track("Fly on the windscreen"))),
         List(depecheMode):_*)
 
-      album.tracks should have size (3)
+      album.tracks should have size (2)
     }
 
     scenario("Album's default constructor is given a an empty List for the tracks parameter") {

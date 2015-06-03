@@ -2,7 +2,9 @@ package com.oreilly.testingscala
 
 class Act
 
-case class Artist(firstName: String, lastName: String) extends Act
+case class Artist(firstName: String, lastName: String, albums: List[Album] = List()) extends Act {
+  def addAlbum(album: Album) = Artist(firstName, lastName, albums :+ album)
+}
 
 class Band(name: String, members: Artist*) extends Act
 

@@ -1,4 +1,4 @@
-package com.oreilly.testingscala.spec
+package com.oreilly.testingscala.scalatest.spec
 
 import com.oreilly.testingscala.{Album, Artist}
 import org.junit.Assert._

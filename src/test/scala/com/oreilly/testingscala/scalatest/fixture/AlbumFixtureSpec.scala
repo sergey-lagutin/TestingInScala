@@ -1,4 +1,4 @@
-package com.oreilly.testingscala.fixture
+package com.oreilly.testingscala.scalatest.fixture
 
 import com.oreilly.testingscala.{Band, Album}
 import org.scalatest.FunSpec

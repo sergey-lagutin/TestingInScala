@@ -1,4 +1,4 @@
-package com.oreilly.testingscala.spec
+package com.oreilly.testingscala.scalatest.spec
 
 import com.oreilly.testingscala.Track
 import org.joda.time.Period

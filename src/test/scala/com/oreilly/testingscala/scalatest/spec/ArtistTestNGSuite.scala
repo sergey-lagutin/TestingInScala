@@ -1,4 +1,4 @@
-package com.oreilly.testingscala.spec
+package com.oreilly.testingscala.scalatest.spec
 
 import org.scalatest.testng.TestNGSuite
 import org.testng.Assert._

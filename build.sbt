@@ -11,3 +11,5 @@ libraryDependencies += "joda-time" % "joda-time" % "2.1"
 libraryDependencies += "org.joda" % "joda-convert" % "1.2"
 
 libraryDependencies += "junit" % "junit" % "4.10" withSources() withJavadoc()
+
+libraryDependencies += "org.testng" % "testng" % "6.1.1" % "test" withSources() withJavadoc()

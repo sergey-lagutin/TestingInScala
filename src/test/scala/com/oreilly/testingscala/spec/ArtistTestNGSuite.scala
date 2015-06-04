@@ -1,8 +1,8 @@
-package com.oreilly.testingscala
+package com.oreilly.testingscala.spec
 
 import org.scalatest.testng.TestNGSuite
-import org.testng.annotations.{Test, DataProvider}
 import org.testng.Assert._
+import org.testng.annotations.{DataProvider, Test}
 
 import scala.collection.mutable
 

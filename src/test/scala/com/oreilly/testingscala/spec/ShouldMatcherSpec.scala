@@ -1,5 +1,6 @@
-package com.oreilly.testingscala
+package com.oreilly.testingscala.spec
 
+import com.oreilly.testingscala.{Album, Artist}
 import org.scalatest.FunSpec
 import org.scalatest.matchers.ShouldMatchers
 
@@ -117,7 +118,7 @@ class ShouldMatcherSpec extends FunSpec with ShouldMatchers {
 
 	describe("java.util.Collection matchers"){
 		it("may be"){
-			import java.util.{List => JList, ArrayList => JArrayList, Map => JMap, HashMap => JHashMap}
+			import java.util.{ArrayList => JArrayList, HashMap => JHashMap, List => JList, Map => JMap}
 			val jList: JList[Int] = new JArrayList[Int](20)
 			jList.add(3); jList.add(6); jList.add(9)
 			val emptyJList: JList[Int] = new JArrayList[Int]()

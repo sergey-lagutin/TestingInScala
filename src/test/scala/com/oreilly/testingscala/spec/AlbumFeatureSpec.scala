@@ -1,5 +1,6 @@
-package com.oreilly.testingscala
+package com.oreilly.testingscala.spec
 
+import com.oreilly.testingscala.{Album, Artist, Band, Track}
 import org.scalatest.FeatureSpec
 import org.scalatest.matchers.ShouldMatchers
 

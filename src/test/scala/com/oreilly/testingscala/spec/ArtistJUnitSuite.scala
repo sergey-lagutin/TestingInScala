@@ -1,8 +1,9 @@
-package com.oreilly.testingscala
+package com.oreilly.testingscala.spec
 
-import org.junit.{Test, Before}
-import org.scalatest.junit.JUnitSuite
+import com.oreilly.testingscala.{Album, Artist}
 import org.junit.Assert._
+import org.junit.{Before, Test}
+import org.scalatest.junit.JUnitSuite
 
 class ArtistJUnitSuite extends JUnitSuite {
   var artist: Artist = _

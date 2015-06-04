@@ -1,7 +1,8 @@
-package com.oreilly.testingscala
+package com.oreilly.testingscala.spec
 
+import com.oreilly.testingscala.{Album, Artist}
 import org.scalatest.matchers.ShouldMatchers
-import org.scalatest.{Tag, GivenWhenThen, FunSpec}
+import org.scalatest.{FunSpec, GivenWhenThen, Tag}
 
 class AlbumSpecAll extends FunSpec with ShouldMatchers with GivenWhenThen {
   describe("An Album") {

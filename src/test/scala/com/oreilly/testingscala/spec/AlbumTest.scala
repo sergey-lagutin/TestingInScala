@@ -1,5 +1,6 @@
-package com.oreilly.testingscala
+package com.oreilly.testingscala.spec
 
+import com.oreilly.testingscala.{Album, Artist}
 import org.scalatest.FunSpec
 import org.scalatest.matchers.ShouldMatchers
 

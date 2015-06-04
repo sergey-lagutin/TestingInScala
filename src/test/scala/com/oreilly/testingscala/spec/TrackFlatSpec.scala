@@ -1,5 +1,6 @@
-package com.oreilly.testingscala
+package com.oreilly.testingscala.spec
 
+import com.oreilly.testingscala.Track
 import org.joda.time.Period
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.MustMatchers

@@ -2,7 +2,7 @@ package com.oreilly.testingscala
 
 import org.joda.time.format.PeriodFormatterBuilder
 
-class Track(name: String, length: String) {
+class Track(val name: String, length: String) {
   require(name.trim().length() != 0, "Track name cannot be blank")
 
   def this(name: String) {

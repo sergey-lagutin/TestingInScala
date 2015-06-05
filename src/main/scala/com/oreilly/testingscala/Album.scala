@@ -21,6 +21,6 @@ class Album(val title: String, val year: Int, _tracks: Option[List[Track]], val 
 
   def artist = acts.head.asInstanceOf[Artist]
 
-  def tracks = _tracks.getOrElse(List())
+  def tracks: List[Track] = _tracks.getOrElse(List())
 }
 
